@@ -1,6 +1,6 @@
 # Portafolio del proyecto
 
-- link del proyecto: <a href="#" target="_blank">Ir a la tienda</a>
+- link del proyecto: <a href="https://brayantorresa.github.io/AluraGeek-Ecommerce/" target="_blank">Ir a la tienda</a>
 
 
 ##  Tecnologias utilizadas:
@@ -11,7 +11,7 @@
 - Responsividad.
 - Accesivilidad.
 - Componentes de página.
-- Tratamento de JSON
+- JSON.
 
 ### Acessibilidad
 - La accesibilidad sigue casi todos los estándares de extensión;
