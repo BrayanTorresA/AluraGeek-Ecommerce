@@ -1,0 +1,57 @@
+@import '../../color.css';
+
+header{
+  background-color: var(--background_header);
+  height: 300px;
+  padding-left: 20px;  
+  position: relative;  
+  width: 100%;
+}
+
+.header__background{
+  background-image: url("../../../img/header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  opacity: 50%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.header__promotions{
+  bottom: 32px;
+  display: flex;
+  flex-direction: column;  
+  position: absolute;
+}
+
+.header__promotions h1,
+.header__promotions p{
+  color: var(--white_100);
+}
+
+.header__promotions p{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.header__promotions h1{
+  font-size: 22px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 500px) {
+  header{
+    padding-left: 60px;  
+  }
+  .header__promotions p{
+    font-size: 20px;
+  }
+
+  .header__promotions h1{
+    font-size: 32px;
+  }
+  
+}

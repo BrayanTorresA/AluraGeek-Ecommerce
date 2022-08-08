@@ -1,0 +1,165 @@
+@import '../color.css';
+
+:root {
+  --gap: 2%; 
+}
+
+main{
+  padding: 30px 60px;
+}
+
+.content, .content__container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  width: 100%; 
+}
+
+.content a{
+  color: var(--blue_primary);
+}
+
+.content__container{
+  row-gap: 14px;  
+}
+
+.content__title{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.content__title h2{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.content__title div{
+  align-items: center;
+  display: flex;
+}
+
+.content__title a{
+  column-gap: 10px;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.content__title a img{
+  height: 15px;
+}
+
+/**/
+
+.card__container{
+  display: flex;
+  width:100%;
+}
+
+.span{
+  align-items: center;
+  background-color: var(--white_footer);
+  cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  vertical-align: center;
+}
+.span img{
+  height: 30px;
+}
+.span:nth-last-of-type(2) img{
+  transform: rotate(180deg)
+}
+
+.cards{
+  column-gap: var(--gap);
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: hidden;
+  padding: 15px 0;
+  row-gap: 15px;
+  width: 100%;
+}
+/*Estilizando las tarjetas*/
+.content__card img{
+  cursor: pointer;  
+  max-height: 300px;
+  width: 100%;
+}
+.content__card:hover{
+  transform: scale(1.03);
+}
+
+.content__card{
+  background-color: var(--white_100);
+  box-shadow: 0px 1px 5px 0px rgba(28, 29, 4, 0.5);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: space-between; 
+  padding: 10px;
+  row-gap: 12px;
+  transition: 0.3s;
+  width: calc((100% / 6) - (var(--gap) - (var(--gap) / 6)));
+  overflow: hidden;
+}
+
+.card__info{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.content__card--title{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.content__card--price, .content__card a{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+@media screen and (max-width: 920px) {   
+  .content__card{
+    width: calc((100% / 5) - (var(--gap) - (var(--gap) / 5))); 
+  }
+}
+
+@media screen and (max-width: 790px) {  
+  .content__card{
+    width: calc((100% / 4) - (var(--gap) - (var(--gap) / 4))); 
+  }
+}
+
+@media screen and (max-width: 668px) {  
+  .content__card{
+    width: calc((100% / 3) - (var(--gap) - (var(--gap) / 3))); 
+  }
+}
+@media screen and (max-width: 545px) {  
+  .content__card{
+    width: calc((100% / 2) - (var(--gap) - (var(--gap) / 2)));      
+  }
+  
+}
+
+@media screen and (max-width: 420px) {  
+  main{
+    padding: 30px 20px;
+  }
+  .content__title h2{
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .content__title a{
+    font-size: 14px;
+  }
+  .content__card{
+    width: 100%;  
+  }
+}
